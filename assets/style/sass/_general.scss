@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    .container-fluid{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    main{
+        padding-top: 120px;
+    }
+    .grid{
+        &-column{
+            display: flex;
+            align-items: center;
+            &-half{
+                flex: 50% 0 0 ;
+            }
+            &-three{
+                flex: 33.3% 0 0;
+            }
+        }
+    }
+    section{
+        padding: 60px 0px;
+    }
+    img{
+        max-width: 100%;
+    }
+}

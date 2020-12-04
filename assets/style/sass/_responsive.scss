@@ -1,0 +1,84 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    body{
+        .container-fluid,
+        .container{
+            max-width: 100%;
+            width: 100%;
+        }
+        .grid{
+            &-column{
+                display: block;
+            }
+        }
+        .main{
+            padding-top: 0px;
+        }
+        .top-content{
+            .landing-caption{
+                h2{
+                    font-size: 30px;
+                }
+                padding: 0px 20px;
+                &-cta{
+                    a{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        .second-content{
+            .title-content{
+                h2{
+                    font-size: 32px;
+                    margin: 0px 0px 10px;
+                    line-height: 35px;
+                }
+                &::after{
+                    content: none;
+                }
+            }
+            &-listings{
+                margin-top: 50px;
+                &-item{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .third-content{
+            .image-logo{
+                width: 50%;
+                margin: 0 auto;
+            }
+            .title-content{
+                text-align: center;
+                margin-left: -0px;
+                padding: 0px 20px;
+                h2{
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+        }
+        .fourth-content{
+            .title-content{
+                h2{
+                    font-size: 26px;
+                    margin: 0px 0px 30px;
+                    font-weight: 400;
+                    position: relative;
+                    line-height: 36px;
+                    padding: 0px 20px;
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+        }
+        .footer{
+            padding: 20px;
+        }
+    }
+}

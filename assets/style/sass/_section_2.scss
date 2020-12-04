@@ -1,0 +1,77 @@
+.second-content{
+    background-color: #1095C1;
+    color: #ffffff;
+    text-align: center;
+    .title-content{
+        position: relative;
+        h2{
+            font-size: 36px;
+            margin: 0px;
+            font-weight: 400;
+        }
+        .description{
+            margin: 0px;
+            font-weight: 100;
+            font-size: 16px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 45%;
+            background-color: $white;
+            height: 1px;
+            width: 100px;
+            display: inline-block;
+        }
+    }
+    &-listings{
+        margin-top: 100px;
+        .grid-column{
+            align-items: flex-start;
+        }
+        &-item{
+            img{
+                max-width: 100%;
+            }
+            .image{
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 20px;
+                background-color: $white;
+                border-radius: 50%;
+            }
+            .description{
+                padding: 20px;
+                h4{
+                    margin: 0px 0px 30px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        height: 1px;
+                        width: 60px;
+                        background-color: $white;
+                        position: absolute;
+                        bottom: -10px;
+                        left: 40%;
+                    }
+                }
+                p{
+                    margin: 0px;
+                    font-size: 16px;
+                    font-weight: 100;
+                    text-align: justify;
+                }
+                .text-link{
+                    color: $white;
+                    position: relative;
+                    &:hover{
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

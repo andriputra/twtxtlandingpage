@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Join twt" />
+    <meta property="og:description" content="Self-Hosted Decentralised microBlogging platform. No ads, no tracking, your content, your data!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+
+    <meta name="description" content="Self-Hosted Decentralised microBlogging platform. No ads, no tracking, your content, your data!" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/style/css/style.css">
+    <title>Getting Strated | Join Twt</title>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation" aria-label="main navigation">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/img/logo.svg" alt="" width="112" height="28">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-list-menu">
+                    <a href="getting-started.html" class="navbar-item is-secondary">Geting Started</a>
+                    <a href="https://jointwt.org/goryon/" class="navbar-item is-secondary">Apps</a>
+                    <a href="https://github.com/jointwt" class="navbar-item is-secondary">Source</a>
+                    <a href="https://dev.twtxt.net" class="navbar-item is-secondary">Documentation</a>
+                    <a href="https://twt.social" class="navbar-item">
+                        <span class="button signup-button rounded secondary-btn raised">Twt.social</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="content">
+        <div class="container">
+            <div class="article-start">
+                <h1>Getting started with Twt</h1>
+                <p>Getting started and joining the Twt.social network is easy! Simply follow these simple steps:</p>
+                <ul>
+                    <li>Pick a pod you want to join.</li>
+                    <li>Create an account on that pod.</li>
+                    <li>And now just login!</li>
+                </ul>
+                <p>For example you can join the <a href="https://twtxt.net">twtxt.net</a> pod by visiting <a href="https://twtxt.net/register">https://twtxt.net/register</a> picking a username and password and then signing in. Don’t forget to provide an email address which is used to recover your account in case you forget your password!</p>
+                <p><b>NOTE:</b> We don’t actually store your email address at all! We store a hash of it and use it only for password recovery. If you forget your email address or loose access to it, your account is forfeit as we <b>DO NOT</b> store any Personal Identifable Information (PII) about you as a Twt.social user. There is simply no way to prove that anyone “owns” an account.</p>
+                <p>The same steps above apply to our Mobile App.</p>
+                <p>You can find other pods to join that <a href="https://twt.social/">Twt.social</a> hosts and manages on behalf of Pod Owners at:
+                <a href="https://twt.social/join">https://twt.social/join</a></p>
+                <p>Question? <a href="https://twtxt.net/support">File a support request</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+            var $nav = $(".navbar-fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                    $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+                window.location.hash = hash;
+                });
+            } 
+            });
+        });
+    </script>
+</body>
+</html>

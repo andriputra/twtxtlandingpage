@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Join twt" />
+    <meta property="og:description" content="Self-Hosted Decentralised microBlogging platform. No ads, no tracking, your content, your data!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+
+    <meta name="description" content="Self-Hosted Decentralised microBlogging platform. No ads, no tracking, your content, your data!" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/style/css/style.css">
+    <title>Compare | Join Twt</title>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation" aria-label="main navigation">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/img/logo.svg" alt="" width="112" height="28">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-list-menu">
+                    <a href="getting-started.html" class="navbar-item is-secondary">Geting Started</a>
+                    <a href="https://jointwt.org/goryon/" class="navbar-item is-secondary">Apps</a>
+                    <a href="https://github.com/jointwt" class="navbar-item is-secondary">Source</a>
+                    <a href="https://dev.twtxt.net" class="navbar-item is-secondary">Documentation</a>
+                    <a href="https://twt.social" class="navbar-item">
+                        <span class="button signup-button rounded secondary-btn raised">Twt.social</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="content">
+        <div class="container">
+            <div class="article-start">
+                <h1>How does Twt compare to Twitter™?</h1>
+                <p>Twt and thus all Twt.social pods (that’s what we call an individual server) is actually pretty similar to Twitter™ so if you’ve used Twitter™ before you’ll feel right at home!</p> 
+                <p>You can:</p>
+                <ul>
+                    <li>Post little short-form posts we called “Twt”(s)</li>
+                    <li>Follow other users throughout the Twt / Twtxt network</li>
+                    <li>Tag and search for “twts” by #hashtag or @mention</li>
+                    <li>Upload media, small photos and have them displayed inline with your "twts"</li>
+                </ul>
+                <p>You can also update your profile, say a little about yourself, upload a mug shot (or if you don’t we’ll create an automated avatar for you!).</p>
+                <p><b>Unlike</b> Twitter™ however:</p>
+                <ul>
+                    <li>We <b>DO NOT</b> collect any Personal Identifiable Information (PII) from you whatsoever! In fact when you sign-up an Email address is completely option (<i>just be sure you don’t forget your password as we cannot recover accounts without a valid email address!</i>).</li>
+                    <li>We <b>DO NOT</b> sell your data to 3rd-parties (<i>not even 2nd-parties</i>), there is none to sell! - We <b>DO NOT</b> have any advertising and our business model is not based around it.</li>
+                </ul>
+                <p>Most importantly of all Twt, Twtxt (<i>the foundation we built upon</i>) and <a href="https://twt.social/">Twt.social</a> pods are designed from the ground up to be decentralized. What does this mean for you? It simply means that there is no single service or entity that underpins the general Twt / Twtxt “social network”. You are free to join <i>any</i> Pod, whether it be a friend’s Pod or the one we run at <a href="https://twtxt.net/">twtxt.net</a>, run your own or purchase a hosted fully-managed Pod from us. No single person or entity controls the platform overall.</p>
+                <p>Additionally (<i>but subtly</i>) the platform and the software behind it does not care about censorship or moderation. We believe users have the right, the power and knowledge to follow who they want (<i>or not</i>) and grow their own social interactions. Please see our <a href="https://twt.social/abuse">Abuse Policy</a> for more details.</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+            var $nav = $(".navbar-fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                    $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+                window.location.hash = hash;
+                });
+            } 
+            });
+        });
+    </script>
+</body>
+</html>
