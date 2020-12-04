@@ -7,8 +7,6 @@
     <meta property="og:url" content="#" />
 
     <meta name="description" content="Self-Hosted Decentralised microBlogging platform. No ads, no tracking, your content, your data!" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,26 +20,24 @@
 <body>
     <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation" aria-label="main navigation">
         <div class="container-fluid">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="assets/img/logo.svg" alt="" width="112" height="28">
-                </a>
-                <label for="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-            <div class="navbar-menu">
-                <div class="navbar-list-menu">
-                    <a href="https://jointwt.org/getting-started/" class="navbar-item is-secondary">Geting Started</a>
-                    <a href="https://jointwt.org/goryon/" class="navbar-item is-secondary">Apps</a>
-                    <a href="https://github.com/jointwt" class="navbar-item is-secondary">Source</a>
-                    <a href="https://dev.twtxt.net" class="navbar-item is-secondary">Documentation</a>
-                    <a href="https://twt.social" class="navbar-item">
-                        <span class="button signup-button rounded secondary-btn raised">Twt.social</span>
+            <div class="topnav">
+                <div class="navbar-brand">
+                    <a class="navbar-item desktop-view" href="index.html">
+                        <img src="assets/img/logo.svg" alt="" width="112" height="28">
                     </a>
                 </div>
+                <div class="navbar-menu" id="menuLinks">
+                    <div class="navbar-list-menu">
+                        <a href="https://jointwt.org/getting-started/" class="navbar-item">Geting Started</a>
+                        <a href="https://jointwt.org/goryon/" class="navbar-item">Apps</a>
+                        <a href="https://github.com/jointwt" class="navbar-item">Source</a>
+                        <a href="https://dev.twtxt.net" class="navbar-item">Documentation</a>
+                        <a href="https://twt.social" class="navbar-item is-primary">
+                            <span class="button signup-button rounded secondary-btn raised">Twt.social</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><i class="fa fa-bars"></i></a>
             </div>
         </div>
     </nav>
@@ -158,6 +154,7 @@
         </section>
     </main>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Fixed Header on Scroll -->
     <script>
         $(function () {
             $(document).scroll(function () {
@@ -166,6 +163,7 @@
             });
         });
     </script>
+    <!-- Scroll To Smooth -->
     <script>
         $(document).ready(function(){
           $("a").on('click', function(event) {
@@ -181,6 +179,7 @@
             });
         });
     </script>
+    <!-- Animation text on Section Top -->
     <script>
         var text = ["Ads", "Tracking", "Algorithms"];
         var counter = 0;
@@ -193,6 +192,17 @@
                 if(counter >= text.length) { counter = 0; }
                 elem.fadeIn();
             });
+        }
+    </script>
+    <!-- Handle Menu Mobile -->
+    <script>
+        function mobileMenu() {
+            var x = document.getElementById("menuLinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
         }
     </script>
 </body>

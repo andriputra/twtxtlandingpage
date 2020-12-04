@@ -1,5 +1,8 @@
 @media (min-width: 320px) and (max-width: 767px) {
     body{
+        main{
+            padding-top: 50px;
+        }
         .container-fluid,
         .container{
             max-width: 100%;
@@ -10,8 +13,66 @@
                 display: block;
             }
         }
-        .main{
-            padding-top: 0px;
+        .navbar{
+            padding: 6px 0px 0px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);    
+            background: $white;
+            &.navbar-transparent{
+                &.navbar-fixed-top{
+                    &.scrolled{
+                        padding: 0px 0px;
+                    }
+                }
+            }
+            .container-fluid{
+                display: block;
+                .topnav{
+                    overflow: hidden;
+                    position: relative;
+                    display: block;
+                    #myLinks {
+                        display: none;
+                    }
+                    a{
+                        padding: 0px 20px;
+                        text-decoration: none;
+                        font-size: 23px;
+                        display: block;
+                        font-size: 14px;
+                        &.icon{
+                            color: $primary;
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            font-size: 24px;
+                            background-color: transparent;
+                            padding: 8px 20px
+                        }
+                    }
+                    .navbar-menu{
+                        display: none;
+                        .navbar-list-menu{
+                            padding: 20px;
+                            background: $gray;
+                            a{
+                                &.navbar-item{
+                                    font-size: 16px;
+                                    color: $black;
+                                    padding: 0px 0px 10px 0px;
+                                    &.is-primary{
+                                        display: inline-block;
+                                        color: $white;
+                                        padding: 5px 20px;
+                                        background-color: $primary;
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .top-content{
             .landing-caption{

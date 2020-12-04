@@ -1,5 +1,6 @@
 .navbar{
     padding: 15px 0px;
+    box-shadow: none;
     &.navbar-transparent{
         position: fixed;
         z-index: 9999;
@@ -18,39 +19,52 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        .navbar-brand{
-            flex: 0 0 0;
-            .navbar-item{
-                img{
-                    max-width: max-content;
-                    width: 74px;
-                    height: 45px;
+        .topnav{
+            display: flex;
+            width: 100%;
+            a{
+                &.icon{
+                    display: none;
                 }
             }
-        }
-        .navbar-menu{
-            flex: 1 0 0 ;
-            text-align: right;
-            .navbar-list-menu{
-                a{
-                    text-decoration: none;
-                    font-size: 16px;
-                    color: $lightGray;
-                    padding: 0px 15px;
-                    &:hover{
-                        color: $black;
+            .navbar-brand{
+                flex: 0 0 0;
+                .navbar-item{
+                    img{
+                        max-width: max-content;
+                        width: 74px;
+                        height: 45px;
                     }
-                    &:last-child{
-                        outline: none;
-                        border-color: $primary;
-                        background-color: $primary;
-                        color: $white;    
-                        transition: all 0.5s;
-                        padding: 10px 20px;
-                        border-radius: 5px;
-                        &:hover{
-                            background-color: $dark;
-                            color: $white;
+                }
+            }
+            .navbar-menu{
+                flex: 1 0 0 ;
+                text-align: right;
+                .navbar-list-menu{
+                    padding: 14px 0px;
+                    background-color: transparent;
+                    a{
+                        &.navbar-item{
+                            text-decoration: none;
+                            font-size: 16px;
+                            color: $lightGray;
+                            padding: 0px 15px;
+                            &:hover{
+                                color: $black;
+                            }
+                            &.is-primary{
+                                outline: none;
+                                border-color: $primary;
+                                background-color: $primary;
+                                color: $white;    
+                                transition: all 0.5s;
+                                padding: 10px 20px;
+                                border-radius: 5px;
+                                &:hover{
+                                    background-color: $dark;
+                                    color: $white;
+                                }
+                            }
                         }
                     }
                 }
