@@ -1,0 +1,64 @@
+.content{
+    .article-start{
+        padding: 40px 0px 0px;
+        h1{
+            font-size: 36px;
+            margin: 0px 0px 45px;
+            font-weight: 400;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 100px;
+                left: 0px;
+                bottom: -10px;
+                background-color: #1095C1;
+                display: inline-block;
+            }
+        }
+    }
+    .step{
+        background-color: $gray;
+        padding: 60px 0px;
+        &-img{
+            padding: 0px 20px;
+        }
+        &-txt{
+            h2{
+                font-size: 24px;
+                font-weight: 400;
+                margin: 0px 0px 15px;
+            }
+            ol{
+                li{
+                    margin-bottom: 10px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+                p{
+                    margin: 8px 0px;
+                    font-size: 12px;            
+                }
+            }
+        }
+        &.two{
+            background-color: $white;
+        }
+        &.last{
+            background-color: $primary;
+            padding: 30px 0px;
+            p{
+                color: $white;
+                margin: 0px 0px 10px;
+                &:last-child{
+                    margin: 0px;
+                }
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

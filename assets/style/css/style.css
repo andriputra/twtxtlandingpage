@@ -24,6 +24,12 @@ body .grid-column-half {
 body .grid-column-three {
   flex: 33.3% 0 0;
 }
+body .grid-column-four {
+  flex: 75% 0 0;
+}
+body .grid-column-one {
+  flex: 25% 0 0;
+}
 body section {
   padding: 60px 0px;
 }
@@ -294,6 +300,65 @@ body img {
   color: #ffffff;
 }
 
+.content .article-start {
+  padding: 40px 0px 0px;
+}
+.content .article-start h1 {
+  font-size: 36px;
+  margin: 0px 0px 45px;
+  font-weight: 400;
+  position: relative;
+}
+.content .article-start h1::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  left: 0px;
+  bottom: -10px;
+  background-color: #1095C1;
+  display: inline-block;
+}
+.content .step {
+  background-color: #f3f3f3;
+  padding: 60px 0px;
+}
+.content .step-img {
+  padding: 0px 20px;
+}
+.content .step-txt h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px 0px 15px;
+}
+.content .step-txt ol li {
+  margin-bottom: 10px;
+}
+.content .step-txt ol li:last-child {
+  margin-bottom: 0px;
+}
+.content .step-txt ol p {
+  margin: 8px 0px;
+  font-size: 12px;
+}
+.content .step.two {
+  background-color: #ffffff;
+}
+.content .step.last {
+  background-color: #1095C1;
+  padding: 30px 0px;
+}
+.content .step.last p {
+  color: #ffffff;
+  margin: 0px 0px 10px;
+}
+.content .step.last p:last-child {
+  margin: 0px;
+}
+.content .step.last p a {
+  color: #ffffff;
+}
+
 .footer {
   background: #234550;
   padding: 20px 0px;
@@ -451,6 +516,30 @@ body .container {
   }
   body .footer {
     padding: 20px;
+  }
+  body .content .article-start {
+    padding: 40px 20px;
+  }
+  body .content .article-start h1 {
+    margin: 0px;
+    font-size: 24px;
+  }
+  body .content .step {
+    padding: 30px 0px;
+  }
+  body .content .step-txt {
+    padding: 0px 20px;
+  }
+  body .content .step-txt h2 {
+    font-size: 18px;
+  }
+  body .content .step-txt ol li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  body .content .step.last {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
