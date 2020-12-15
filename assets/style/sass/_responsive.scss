@@ -166,6 +166,24 @@
                 &.last{
                     padding-left: 20px;
                     padding-right: 20px;
+                    .step-txt{
+                        padding: 0px;
+                    }
+                }
+                &.two{
+                    .grid-column{
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                }
+                &.footer{
+                    .container{
+                        padding: 0px 20px;
+                        width: auto;
+                    }
+                    p{
+                        text-align: center;
+                    }
                 }
             }
         }

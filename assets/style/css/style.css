@@ -346,7 +346,13 @@ body img {
 }
 .content .step.last {
   background-color: #1095C1;
-  padding: 30px 0px;
+  padding: 60px 0px;
+}
+.content .step.last h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px 0px 15px;
+  color: #ffffff;
 }
 .content .step.last p {
   color: #ffffff;
@@ -357,6 +363,15 @@ body img {
 }
 .content .step.last p a {
   color: #ffffff;
+}
+.content .step.footer {
+  padding: 20px 0px;
+  background-color: #363636;
+}
+.content .step.footer p {
+  margin: 0px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .footer {
@@ -540,6 +555,20 @@ body .container {
   body .content .step.last {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  body .content .step.last .step-txt {
+    padding: 0px;
+  }
+  body .content .step.two .grid-column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body .content .step.footer .container {
+    padding: 0px 20px;
+    width: auto;
+  }
+  body .content .step.footer p {
+    text-align: center;
   }
 }
 
